@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yearMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="10dp"
+        android:text="2017년 6월"
+        android:textColor="#dd000000"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/itemCard"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/dayImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_job_no_touch" />
+
+            <TextView
+                android:id="@+id/dayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/dayImage"
+                android:text="발렌타인데이"
+                android:textColor="#dd000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/dayDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dayName"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/dayImage"
+                android:textColor="#9e9e9e"
+                android:textSize="13sp"
+                tools:text="6월 17일" />
+
+            <TextView
+                android:id="@+id/dDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13sp"
+                android:layout_marginTop="22sp"
+                android:layout_toRightOf="@+id/dayName"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                tools:text="D-Day" />
+
+            <TextView
+                android:id="@+id/goPresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="22dp"
+                android:text="선물하기"
+                android:textColor="#ff1744"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/removeCheckBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:buttonTint="@color/removeCheckBox"
+                android:padding="10dp"
+                android:textColor="#ff1744"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

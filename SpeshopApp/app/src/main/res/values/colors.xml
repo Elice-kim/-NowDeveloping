@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#c7c6c6</color>
+    <color name="colorAccent">#ff1744</color>
+    <color name="titleColor">#ffffff</color>
+
+    <color name="selectedTab">#ff1744</color>
+    <color name="removeCheckBox">#7ba8ff</color>
+</resources>

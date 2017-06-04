@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elice.speshopapp.brand.BrandDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nameTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_toolbar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/copy" />
+
+            <TextView
+                android:id="@+id/brandTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#0d1e40"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="HAHAH" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/brandImgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTitleLayout"
+            >
+
+            <ImageView
+                android:id="@+id/brandImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/brandDetailName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="47dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="HAHAH" />
+
+            <TextView
+                android:id="@+id/brandDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brandDetailName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="11dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                tools:text="JAJAJAJAJAJAJA" />
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/brandDetailRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/brandImgLayout" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

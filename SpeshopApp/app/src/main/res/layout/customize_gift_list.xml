@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="16sp"
+    android:layout_marginLeft="16sp"
+    android:layout_marginRight="16sp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:cardCornerRadius="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/brandProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <ImageView
+                    android:id="@+id/likeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/brandProduct"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="13sp"
+                    android:background="@drawable/copy" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/productFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#dd000000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="hahahah" />
+
+            <TextView
+                android:id="@+id/productMemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#616161"
+                android:textSize="11sp"
+                tools:text="hah" />
+
+            <TextView
+                android:id="@+id/productFullPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#ff1744"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="20,000원" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

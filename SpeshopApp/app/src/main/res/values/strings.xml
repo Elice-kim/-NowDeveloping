@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SpeshopApp</string>
+    <string name="gift">GIFT</string>
+    <string name="list">LIST</string>
+    <string name="brand">BRAND</string>
+    <string name="more">MORE</string>
+    <string name="keyword">이 달의 추천 키워드</string>
+    <string name="modify_profile_txt"><u>프로필 사진 변경</u></string>
+
+</resources>

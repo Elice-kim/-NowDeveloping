@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.elice.speshopapp.search.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/nameTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_toolbar_height"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/copy" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search_small"/>
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:hint="상품명 검색"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#0d1e40"
+            android:textSize="18sp"
+            tools:text="HAHAH"
+            android:backgroundTint="#868686"
+            android:textCursorDrawable="@drawable/cursor_color"/>
+
+        <requestFocus />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="21dp"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="총 00개의 상품이 있습니다" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="9dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
